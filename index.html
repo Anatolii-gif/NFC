@@ -1,7 +1,36 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Моя NFC страница</h1>
-<p>Проверка GitHub Pages.</p>
+
+<h2>Введите PIN</h2>
+
+<input type="password" id="pin">
+<button onclick="checkPin()">Открыть</button>
+
+<div id="secret" style="display:none;">
+
+<h1>Секретная информация</h1>
+
+<p>Добро пожаловать</p>
+
+</div>
+
+<script>
+
+function checkPin(){
+
+if(document.getElementById("pin").value=="123456")
+{
+document.getElementById("secret").style.display="block";
+}
+else
+{
+alert("Неверный PIN");
+}
+
+}
+
+</script>
+
 </body>
 </html>
