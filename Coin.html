@@ -50,6 +50,19 @@
         document.getElementById('error').textContent='Неверный PIN';
       }
     }
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden) {
+    document.getElementById("gallery").style.display = "none";
+    document.getElementById("lock").style.display = "block";
+    document.getElementById("pin").value = "";
+  }
+});
+
+window.addEventListener("pageshow", function () {
+  document.getElementById("gallery").style.display = "none";
+  document.getElementById("lock").style.display = "block";
+  document.getElementById("pin").value = "";
+});
   </script>
 </body>
 </html>
