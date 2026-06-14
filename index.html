@@ -53,22 +53,18 @@ button{
 </div>
 
 <script>
-function openPage(){
+function openPage() {
+  const pin = document.getElementById("pin").value.trim();
 
-let pin = document.getElementById("pin").value;
-
-if(pin=="1111"){
-window.location.href="monety/";
-}
-
-else if(pin=="2222"){
-window.location.href="silver/";
-}
-
-else{
-alert("Неверный PIN");
-}
-
+  if (pin === "1111") {
+    window.location.href = "./monety/";
+  } 
+  else if (pin === "2222") {
+    window.location.href = "./silver/";
+  } 
+  else {
+    alert("Неверный PIN: " + pin);
+  }
 }
 </script>
 
