@@ -58,13 +58,21 @@
     function openPage() {
       const pin = document.getElementById("pin").value.trim();
 
-      if (pin === "1111") {
-        window.location.href = "monety/";
-      } else if (pin === "2222") {
-        window.location.href = "silver/";
-      } else {
-        document.getElementById("error").textContent = "Неверный PIN";
-      }
+      if (pin === "3099") {
+    window.location.href = "anatoli/";
+}
+else if (pin === "3090") {
+    window.location.href = "anat/";
+}
+else if (pin === "1111") {
+    window.location.href = "monety/";
+}
+else if (pin === "2222") {
+    window.location.href = "silver/";
+}
+else {
+    document.getElementById("error").textContent = "Неверный PIN";
+}
     }
   </script>
 
